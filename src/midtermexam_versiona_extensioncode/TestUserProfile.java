@@ -1,27 +1,25 @@
-package midtermexam_versiona_extensioncode;
 import java.util.Scanner;
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author dhils
- */
 public class TestUserProfile {
-        private String name;
+    public static void main(String[] args)
+    {
+       String[] genres = {"Comedy", "Drama", "Action", "Mystery"};
+       System.out.println("These are the Available genres: ");
+       for(int i=0;i<genres.length;i++)
+       {
+           System.out.println("    "+genres[i]);
+       }
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter your Name: ");
+        String name=sc.nextLine();
+       
+        Scanner obj1=new Scanner(System.in);
+        System.out.print("Genre: ");
+        String genre=sc.nextLine();
+     
+        System.out.println("Your profile is succesfully created!");
         
-        Scanner sc = new Scanner(System.in);
-        public static void main(String[] args){
-            
         
-        System.out.print("enter your name");
-        name = sc.nextLine();
-        
-        UserProfile[] users = new UserProfile();
-        
-    
+    }
     
 }
